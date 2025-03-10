@@ -1,0 +1,81 @@
+.hidden {
+	width: 100%;
+	height: 92%;
+	position: absolute;
+	z-index: 1;
+}
+
+.wrapper {
+	width: 68%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.item {
+	background-color: #e8e0f7;
+	border-radius: 10px;
+	padding: 5px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #bdb1e7;
+	}
+
+	&.active {
+		background-color: #bdb1e7;
+	}
+}
+
+.button {
+	background-color: #372579;
+	width: 20%;
+
+	&:hover {
+		background-color: #47309c !important;
+	}
+
+	&:disabled {
+		&:hover {
+			background-color: transparent !important;
+		}
+	}
+}
+
+.skillsNotFound {
+	color: rgb(47, 46, 46);
+	opacity: 0.5;
+}
+
+.spin {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.empty {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+}
+
+.modal {
+	margin-top: 10px;
+	display: flex;
+	justify-content: right;
+	gap: 10px;
+
+	input {
+		width: 50%;
+		border: 1p;
+	}
+}
+
+.modalButton {
+	&:hover {
+		color: #372579 !important;
+		border: 1px solid #372579 !important;
+	}
+}
